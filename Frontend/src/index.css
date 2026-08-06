@@ -63,128 +63,128 @@
   --spacing-80: 80px; 
   --spacing-120: 120px; 
  
-/* Font Family Variables */
---font-europa: "Europa Nuova", sans-serif;
---font-heisei-mincho: "Heisei Mincho Std", sans-serif;
---font-sora: "Sora", sans-serif;
---font-family-primary: var(--font-sora);
---font-family-secondary: var(--font-europa);
---font-family-tertiary: var(--font-heisei-mincho);
-
-/* Font weight variables */
---font-weight-regular: 400;
---font-weight-medium: 500;
---font-weight-semibold: 600;
---font-weight-bold: 700;
-
-/* Font size variables */
---font-size-h1: 64px;
---font-size-h2: 48px;
---font-size-h3: 40px;
---font-size-h4: 32px;
---font-size-h5: 26px;
---font-size-h6: 24px;
---font-size-body-1: 20px;
---font-size-body-2: 18px;
---font-size-body-3: 16px;
---font-size-body-4: 14px;
---font-size-tag: 16px;
---font-size-card-sm:28px;
---font-size-card-lg: 40px;
---font-size-text-sm: 14px;
---font-size-text-md: 60px;
---font-size-text-lg: 86px;
-
-/* Line height variables  */
---line-height-h1-70: 70px;
---line-height-h2-54: 54px;
---line-height-h3-46: 46px;
---line-height-h4-38: 38px;
---line-height-h5-32: 32px;
---line-height-h6-30: 30px;
---line-height-body-1-36: 36px;
---line-height-body-2-24: 24px;
---line-height-body-3-22: 22px;
---line-height-body-4-20: 20px;
---line-height-tag-22: 22px;
---line-height-card-sm-34: 34px;
---line-height-card-lg-46: 46px;
---line-height-text-sm-20: 20px;
---line-height-text-md-66: 66px;
---line-height-text-lg-92: 92px;
-
-@media (max-width:991px) {
-    --font-size-h1: 64px;
-    --font-size-h2: 48px;
-    --font-size-h3: 40px;
-    --font-size-h4: 32px;
-    --font-size-h5: 26px;
-    --font-size-h6: 24px;
-    --font-size-body-1: 20px;
-    --font-size-body-2: 18px;
-    --font-size-body-3: 16px;
-    --font-size-body-4: 14px;
-    --font-size-tag: 16px;
-    --font-size-card-sm: 28 px;
-    --font-size-card-lg: 40px;
-    --font-size-text-sm: 14px;
-    --font-size-text-md: 60px;
-    --font-size-text-lg: 66px;
-
-    /* Line height variables */
-    --line-height-h1-70: 70px;
-    --line-height-h2-54: 54px;
-    --line-height-h3-46: 46px;
-    --line-height-h4-38: 38px;
-    --line-height-h5-32: 32px;
-    --line-height-h6-30: 30px;
-    --line-height-body-1-36: 36px;
-    --line-height-body-2-24: 24px;
-    --line-height-body-3-22: 22px;
-    --line-height-body-4-20: 20px;
-    --line-height-tag-22: 22px;
-    --line-height-card-sm-34: 34px;
-    --line-height-card-lg-46: 46px;
-    --line-height-text-sm-20: 20px;
-    --line-height-text-md-66: 66px;
-    --line-height-text-lg-92: 72px;
-}
-
-@media (max-width: 449px) {
-    --font-size-h1: 38px;
-    --font-size-h2: 30px;
-    --font-size-h3: 34px;
-    --font-size-h4: 28px;
-    --font-size-h5: 22px;
-    --font-size-h6: 20px;
-    --font-size-body-1: 18px;
-    --font-size-body-2: 16px;
-    --font-size-body-3: 14px;
-    --font-size-body-4: 12px;
-    --font-size-tag: 14px;
-    --font-size-card-sm: 20px;
-    --font-size-card-lg: 30px;
-    --font-size-text-sm: 12px;
-    --font-size-text-md: 38px;
-    --font-size-text-lg: 42px;
-
-    /* Line height variables */
-    --line-height-h1-70: 44px;
-    --line-height-h2-54: 36px;
-    --line-height-h3-46: 40px;
-    --line-height-h4-38: 34px;
-    --line-height-h5-32: 28px;
-    --line-height-h6-30: 26px;
-    --line-height-body-1-36: 24px;
-    --line-height-body-2-24: 22px;
-    --line-height-body-3-22: 20px;
-    --line-height-body-4-20: 18px;
-    --line-height-tag-22: 20px;
-    --line-height-card-sm-34: 26px;
-    --line-height-card-lg-46: 36px;
-    --line-height-text-sm-20: 18px;
-    --line-height-text-md-66: 44px;
-    --line-height-text-lg-92: 48px;
+  /* Font Family Variables */
+  --font-europa: "Europa Nuova", sans-serif;
+  --font-heisei-mincho: "Heisei Mincho Std", sans-serif;
+  --font-sora: "Sora", sans-serif;
+  --font-family-primary: var(--font-sora);
+  --font-family-secondary: var(--font-europa);
+  --font-family-tertiary: var(--font-heisei-mincho);
+  
+  /* Font weight variables */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Font size variables */
+  --font-size-h1: 64px;
+  --font-size-h2: 48px;
+  --font-size-h3: 40px;
+  --font-size-h4: 32px;
+  --font-size-h5: 26px;
+  --font-size-h6: 24px;
+  --font-size-body-1: 20px;
+  --font-size-body-2: 18px;
+  --font-size-body-3: 16px;
+  --font-size-body-4: 14px;
+  --font-size-tag: 16px;
+  --font-size-card-sm:28px;
+  --font-size-card-lg: 40px;
+  --font-size-text-sm: 14px;
+  --font-size-text-md: 60px;
+  --font-size-text-lg: 86px;
+  
+  /* Line height variables  */
+  --line-height-h1-70: 70px;
+  --line-height-h2-54: 54px;
+  --line-height-h3-46: 46px;
+  --line-height-h4-38: 38px;
+  --line-height-h5-32: 32px;
+  --line-height-h6-30: 30px;
+  --line-height-body-1-36: 36px;
+  --line-height-body-2-24: 24px;
+  --line-height-body-3-22: 22px;
+  --line-height-body-4-20: 20px;
+  --line-height-tag-22: 22px;
+  --line-height-card-sm-34: 34px;
+  --line-height-card-lg-46: 46px;
+  --line-height-text-sm-20: 20px;
+  --line-height-text-md-66: 66px;
+  --line-height-text-lg-92: 92px;
+  
+  @media (max-width:991px) {
+      --font-size-h1: 64px;
+      --font-size-h2: 48px;
+      --font-size-h3: 40px;
+      --font-size-h4: 32px;
+      --font-size-h5: 26px;
+      --font-size-h6: 24px;
+      --font-size-body-1: 20px;
+      --font-size-body-2: 18px;
+      --font-size-body-3: 16px;
+      --font-size-body-4: 14px;
+      --font-size-tag: 16px;
+      --font-size-card-sm: 28 px;
+      --font-size-card-lg: 40px;
+      --font-size-text-sm: 14px;
+      --font-size-text-md: 60px;
+      --font-size-text-lg: 66px;
+  
+      /* Line height variables */
+      --line-height-h1-70: 70px;
+      --line-height-h2-54: 54px;
+      --line-height-h3-46: 46px;
+      --line-height-h4-38: 38px;
+      --line-height-h5-32: 32px;
+      --line-height-h6-30: 30px;
+      --line-height-body-1-36: 36px;
+      --line-height-body-2-24: 24px;
+      --line-height-body-3-22: 22px;
+      --line-height-body-4-20: 20px;
+      --line-height-tag-22: 22px;
+      --line-height-card-sm-34: 34px;
+      --line-height-card-lg-46: 46px;
+      --line-height-text-sm-20: 20px;
+      --line-height-text-md-66: 66px;
+      --line-height-text-lg-92: 72px;
+  }
+  
+  @media (max-width: 449px) {
+      --font-size-h1: 38px;
+      --font-size-h2: 30px;
+      --font-size-h3: 34px;
+      --font-size-h4: 28px;
+      --font-size-h5: 22px;
+      --font-size-h6: 20px;
+      --font-size-body-1: 18px;
+      --font-size-body-2: 16px;
+      --font-size-body-3: 14px;
+      --font-size-body-4: 12px;
+      --font-size-tag: 14px;
+      --font-size-card-sm: 20px;
+      --font-size-card-lg: 30px;
+      --font-size-text-sm: 12px;
+      --font-size-text-md: 38px;
+      --font-size-text-lg: 42px;
+  
+      /* Line height variables */
+      --line-height-h1-70: 44px;
+      --line-height-h2-54: 36px;
+      --line-height-h3-46: 40px;
+      --line-height-h4-38: 34px;
+      --line-height-h5-32: 28px;
+      --line-height-h6-30: 26px;
+      --line-height-body-1-36: 24px;
+      --line-height-body-2-24: 22px;
+      --line-height-body-3-22: 20px;
+      --line-height-body-4-20: 18px;
+      --line-height-tag-22: 20px;
+      --line-height-card-sm-34: 26px;
+      --line-height-card-lg-46: 36px;
+      --line-height-text-sm-20: 18px;
+      --line-height-text-md-66: 44px;
+      --line-height-text-lg-92: 48px;
   }
 }
 
