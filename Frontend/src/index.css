@@ -10,7 +10,10 @@
   --bg-blue: #1B3452;
   --bg-midnight-blue: #B7C8D3;
   --bg-blue-input: #E3EDF2;
+  --bg-orange: #FF781F;
   --tap-highlight-color : #ffffff00;
+  --bg-light-blue: #D7E5ED;
+  --bg-border:#495D75;
 
   /* content colors */
   --text-primary: #1B3452;
@@ -26,6 +29,7 @@
   --border-tertiary: #1B3452;
   --border-midnight-blue: #B7C8D3;
   --border-light-blue: #D7E5ED;
+  --border-white: #FFFFFF;
 
 
   /* Other colors */
@@ -50,14 +54,20 @@
 
   /* spacing variables */
   --spacing-4: 4px;
+  --spacing-6: 6px;
   --spacing-8: 8px;
+  --spacing-10: 10px;
   --spacing-12: 12px;
   --spacing-16: 16px;
+  --spacing-18: 18px;
   --spacing-20: 20px;
   --spacing-24: 24px;
+  --spacing-28: 28px;
   --spacing-30: 30px;
   --spacing-32: 32px;
+  --spacing-36: 36px;
   --spacing-40: 40px;
+  --spacing-50: 50px;
   --spacing-60: 60px;
   --spacing-72: 72px;           
   --spacing-80: 80px; 
