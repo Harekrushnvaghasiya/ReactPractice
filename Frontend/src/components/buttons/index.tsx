@@ -1,7 +1,7 @@
 import React from 'react';
 import { BUTTON_SIZE, BUTTON_VARIANTS } from '../global/constants';
 import { Buttons,Icon } from './style';
-import  SVGIcon from '../Icons/SVGIcon';
+import  SVGIcon from '../../assets/Icons/SVGIcon';
 
 /**
  * Button Component
