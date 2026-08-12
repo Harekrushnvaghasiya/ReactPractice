@@ -23,32 +23,10 @@ import {
   LogosWrapper
 } from "./style";
 
-import type {
-  NavbarItem,
-  NavbarSocialLink,
-  NavbarAppLink,
-  NavbarCTA,
-} from "../index";
 import SVGIcon from "../../../assets/Icons/SVGIcon";
 import Button from "../../buttons";
 import { Images } from "../../../assets/images";
-interface ResponsiveNavbarProps {
-  isOpen: boolean;
-
-  onClose: () => void;
-
-  logo: string;
-
-  logoAlt?: string;
-
-  items: NavbarItem[];
-
-  socialLinks?: NavbarSocialLink[];
-
-  appLinks?: NavbarAppLink[];
-
-  cta?: NavbarCTA;
-}
+import { NavbarProps } from "../../../utils/appType";
 
 const ResponsiveNavbar = ({
   isOpen,
@@ -59,7 +37,7 @@ const ResponsiveNavbar = ({
   socialLinks = [],
   appLinks = [],
   cta,
-}: ResponsiveNavbarProps) => {
+}: NavbarProps) => {
   const [openDropdown, setOpenDropdown] =
     useState<number | null>(null);
 
@@ -161,7 +139,7 @@ const ResponsiveNavbar = ({
         </MobileNavigation>
         <MobileFooter>
           {/* FOOTER */}
-          
+
         <LogosWrapper> 
           {/* SOCIAL ICONS */}
           {socialLinks.length > 0 && (

@@ -16,43 +16,13 @@ import {
   // Dropdown,
   DropdownLink,
   MobileMenuButton,
-  DropdownConten,
+  DropdownContent,
   DropdownWrapper,
 } from "./style";
 
 import Button from "../buttons";
 import SVGIcon from "../../assets/Icons/SVGIcon";
-
-export interface NavbarItem {
-  label: string;
-  href?: string;
-  children?: NavbarItem[];
-}
-
-export interface NavbarSocialLink {
-  label: string;
-  href: string;
-}
-
-export interface NavbarAppLink {
-  label: string;
-  href: string;
-  image: string;
-}
-
-export interface NavbarCTA {
-  label: string;
-  href: string;
-}
-
-export interface NavbarProps {
-  logo: string;
-  logoAlt?: string;
-  items: NavbarItem[];
-  socialLinks?: NavbarSocialLink[];
-  appLinks?: NavbarAppLink[];
-  cta?: NavbarCTA;
-}
+import { NavbarProps } from "../../utils/appType";
 
 const Navbar = ({
   logo,
@@ -164,7 +134,7 @@ const Navbar = ({
                   {hasChildren &&
                     openDropdown === index && (
                       <DropdownWrapper>
-                        <DropdownConten>
+                        <DropdownContent>
                         {item.children?.map(
                           (child) => (
                             <DropdownLink
@@ -179,7 +149,7 @@ const Navbar = ({
                             </DropdownLink>
                           ),
                         )}
-                        </DropdownConten>
+                        </DropdownContent>
                       </DropdownWrapper>
                     )}
                 </NavItem>

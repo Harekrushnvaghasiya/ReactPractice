@@ -180,7 +180,7 @@ export const DropdownWrapper = styled.div`
   // }
 `;
 
-export const DropdownConten = styled.div`
+export const DropdownContent = styled.div`
  min-width: 210px;
   padding: 18px 0;
   background: #ffffff;
