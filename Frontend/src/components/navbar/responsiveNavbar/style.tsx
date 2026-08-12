@@ -172,3 +172,16 @@ export const MobileCTA = styled.a`
   font-weight: 400;
   text-decoration: none;
 `;
+
+export const LogosWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-16);
+  width:100%;
+
+  @media (max-width: 449px) {
+    flex-direction : column;
+    
+  }
+`

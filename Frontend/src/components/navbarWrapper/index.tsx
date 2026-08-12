@@ -1,6 +1,6 @@
 import Navbar from "../navbar";
 import NavbarVisibility from "./navbarVisibility";
-import logo from "../../assets/images/logo.svg";
+import { Images } from "../../assets/images";
 
 const navbarItems = [
   {
@@ -86,6 +86,19 @@ const socialLinks = [
   },
 ];
 
+const appLinks = [
+  {
+    label: "Google Play",
+    href: "https://play.google.com/",
+    image: Images.googlelogo,
+  },
+  {
+    label: "App Store",
+    href: "https://www.apple.com/app-store/",
+    image: Images.IOS,
+  },
+];
+
 const NavbarWrapper = () => {
   return (
     <NavbarVisibility
@@ -95,10 +108,11 @@ const NavbarWrapper = () => {
       ]}
     >
       <Navbar
-        logo={logo}
+        logo={Images.logo}
         logoAlt="Pause"
         items={navbarItems}
         socialLinks={socialLinks}
+        appLinks={appLinks}
         cta={{
           label: "Book now",
           href: "/book-now",

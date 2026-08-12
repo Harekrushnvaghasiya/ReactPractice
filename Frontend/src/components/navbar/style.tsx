@@ -99,7 +99,7 @@ export const Logo = styled.img`
   height: auto;
   object-fit: contain;
   @media (max-width: 991px) {
-    width: 82px;
+    width: 80px;
   }
 `;
 

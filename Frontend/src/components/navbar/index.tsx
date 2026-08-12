@@ -62,18 +62,16 @@ const Navbar = ({
   appLinks = [],
   cta,
 }: NavbarProps) => {
-  /**
-   * Controls whether the responsive/mobile menu is open.
-   */
+  
+  //  * Controls whether the responsive/mobile menu is open.
   const [isMobileMenuOpen, setIsMobileMenuOpen] =
     useState(false);
 
   const [openDropdown, setOpenDropdown] =
     useState<number | null>(null);
 
-  /**
-   * Opens/closes the mobile menu.
-   */
+  //  * Opens/closes the mobile menu.
+
   const handleMobileMenu = () => {
     setIsMobileMenuOpen((previous) => !previous);
   };

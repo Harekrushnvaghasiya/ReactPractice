@@ -20,6 +20,7 @@ import {
   MobileAppLink,
   MobileCTA,
   ResponsiveButtonWrapper,
+  LogosWrapper
 } from "./style";
 
 import type {
@@ -30,7 +31,7 @@ import type {
 } from "../index";
 import SVGIcon from "../../../assets/Icons/SVGIcon";
 import Button from "../../buttons";
-
+import { Images } from "../../../assets/images";
 interface ResponsiveNavbarProps {
   isOpen: boolean;
 
@@ -158,9 +159,10 @@ const ResponsiveNavbar = ({
             );
           })}
         </MobileNavigation>
-
-        {/* FOOTER */}
         <MobileFooter>
+          {/* FOOTER */}
+          
+        <LogosWrapper> 
           {/* SOCIAL ICONS */}
           {socialLinks.length > 0 && (
             <MobileSocialLinks>
@@ -186,7 +188,7 @@ const ResponsiveNavbar = ({
                   key={app.label}
                   href={app.href}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src={app.image}
@@ -196,6 +198,7 @@ const ResponsiveNavbar = ({
               ))}
             </MobileAppLinks>
           )}
+          </LogosWrapper>  
 
           {/* BOOK NOW */}
           {cta && (
