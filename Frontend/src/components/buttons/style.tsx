@@ -23,6 +23,7 @@ export const Buttons = styled.button<ButtonProps>`
   cursor: pointer;
   border: 1px solid transparent;
   white-space: nowrap;
+  width:max-content;
   svg path {
     fill: var(--text-secondary);
   }
@@ -48,6 +49,7 @@ export const Buttons = styled.button<ButtonProps>`
     Props.size === BUTTON_SIZE.SMALL &&
     css`
       padding: var(--spacing-8) var(--spacing-24);
+      ${Typography.body_3}
       @media (max-width: 449px) {
         padding: var(--spacing-6) var(--spacing-20);
       }

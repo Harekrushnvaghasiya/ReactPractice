@@ -1,15 +1,14 @@
 import Button from "./components/buttons";
-
+import NavbarWrapper from "./components/navbarWrapper";
 
 function App() {
 
   return (
     <>
-      <hr />
+      <NavbarWrapper />
       <Button title="Button" size="small" />
       <hr />
       <Button title="Button" isShowIcon />
-      <hr />
       <hr />
       <Button title="Button" />
       <hr />
