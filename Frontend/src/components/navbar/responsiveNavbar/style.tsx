@@ -50,8 +50,8 @@ export const CloseButton = styled.button`
   border-radius: 50%;
   background: #ffffff;
   color: #1d3b5d;
-  font-size: 26px;
-  line-height: 100%;
+  font-size: 20px;
+  line-height: 1;
   cursor: pointer;
 `;
 
@@ -182,5 +182,6 @@ export const LogosWrapper = styled.div`
 
   @media (max-width: 449px) {
     flex-direction : column;
+    
   }
 `

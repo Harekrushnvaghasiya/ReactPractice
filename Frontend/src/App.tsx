@@ -1,5 +1,4 @@
 import Button from "./components/buttons";
-import Footer from "./components/footer";
 import NavbarWrapper from "./components/navbarWrapper";
 
 function App() {
@@ -30,7 +29,6 @@ function App() {
       <Button title="Button" variant="disable" size="small" isShowIcon />
       <hr />
       <Button title="Button" variant="disable" size="small" />
-      <Footer/>
     </>
   );
 }

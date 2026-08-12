@@ -1,5 +1,10 @@
 import { useLocation } from "react-router-dom";
-import { NavbarVisibilityProps } from "../../utils/appType";
+
+interface NavbarVisibilityProps {
+  children: React.ReactNode;
+
+  hiddenRoutes?: string[];
+}
 
 const NavbarVisibility = ({
   children,
