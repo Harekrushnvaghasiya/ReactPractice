@@ -65,6 +65,15 @@ const Footer = () => {
         <FooterGalleryItem>
           <FooterGalleryImage src={Images.FooterImage4} alt="Pause studio" />
         </FooterGalleryItem>
+        <FooterGalleryItem>
+          <FooterGalleryImage src={Images.FooterImage5} alt="Pause studio" />
+        </FooterGalleryItem>
+        <FooterGalleryItem>
+          <FooterGalleryImage src={Images.FooterImage6} alt="Pause studio" />
+        </FooterGalleryItem>
+        <FooterGalleryItem>
+          <FooterGalleryImage src={Images.FooterImage7} alt="Pause studio" />
+        </FooterGalleryItem>
       </FooterGallery>
 
       {/* Footer Content */}
