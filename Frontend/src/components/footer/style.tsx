@@ -15,6 +15,9 @@ export const FooterGallery = styled.div`
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   overflow: hidden;
+  @media (max-width: 449px) {
+    height: 180px;
+  }
 `;
 
 export const FooterGalleryItem = styled.div`
@@ -62,8 +65,6 @@ export const InstagramButton = styled.a`
 // CONTENT WRAPPER
 export const FooterContentWrapper = styled.div`
   width: 100%;
-  max-width: 1320px;
-  margin: 0 auto;
   padding: 120px 60px 32px;
   @media (max-width: 991px) {
     padding: 80px 20px 24px;
@@ -75,8 +76,8 @@ export const FooterContentWrapper = styled.div`
 
 // top content
 export const FooterContentTop = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   gap: 80px;
   margin-bottom: 80px;
   @media (max-width: 991px) {
@@ -129,10 +130,10 @@ export const FooterNewsletterInput = styled.input`
 
 // middle section
 export const FooterContentMiddle = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   gap: var(--spacing-50);
-  align-items: start;
+  align-items: flex-start;
   margin-bottom: 80px;
 
   @media (max-width: 991px) {
@@ -150,10 +151,12 @@ export const FooterContentMiddle = styled.div`
 // logo
 export const FooterLogoBlock = styled.div`
   margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap:46px;
   @media (max-width: 991px) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     column-gap: 46px;
     row-gap: 30px;
     margin-bottom: 0px;
@@ -195,10 +198,25 @@ export const FooterAppLink = styled.a`
 `;
 
 //  FOOTER COLUMNS
+export const FooterRightBlock = styled.div`
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 550px;
+  @media (max-width: 991px) {
+    max-width: none;
+    justify-content: flex-start;
+  }
+`;
 export const FooterColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @media (max-width: 991px) {
+    max-width: 150px;
+    width: 100%;
+  }
 `;
 
 export const FooterColumnTitle = styled.h4`

@@ -25,6 +25,7 @@ import {
   FooterSocialLinks,
   FooterSocialLink,
   MarginTop,
+  FooterRightBlock,
 } from "./style";
 
 import { Images } from "../../assets/images";
@@ -116,37 +117,39 @@ const Footer = () => {
           </FooterLogoBlock>
 
           {/* PAGES */}
-          <FooterColumn>
-            <FooterColumnTitle>PAGES</FooterColumnTitle>
+          <FooterRightBlock>
+            <FooterColumn>
+              <FooterColumnTitle>PAGES</FooterColumnTitle>
 
-            {pagesLinks.map((link) => (
-              <FooterLink key={link.label} href={link.href}>
-                {link.label}
-              </FooterLink>
-            ))}
-          </FooterColumn>
+              {pagesLinks.map((link) => (
+                <FooterLink key={link.label} href={link.href}>
+                  {link.label}
+                </FooterLink>
+              ))}
+            </FooterColumn>
 
-          {/* QUICK LINKS */}
-          <FooterColumn>
-            <FooterColumnTitle>QUICK LINKS</FooterColumnTitle>
+            {/* QUICK LINKS */}
+            <FooterColumn>
+              <FooterColumnTitle>QUICK LINKS</FooterColumnTitle>
 
-            {quickLinks.map((link) => (
-              <FooterLink key={link.label} href={link.href}>
-                {link.label}
-              </FooterLink>
-            ))}
-          </FooterColumn>
+              {quickLinks.map((link) => (
+                <FooterLink key={link.label} href={link.href}>
+                  {link.label}
+                </FooterLink>
+              ))}
+            </FooterColumn>
 
-          {/* LEGACY */}
-          <FooterColumn>
-            <FooterColumnTitle>LEGACY</FooterColumnTitle>
+            {/* LEGACY */}
+            <FooterColumn>
+              <FooterColumnTitle>LEGACY</FooterColumnTitle>
 
-            {legacyLinks.map((link) => (
-              <FooterLink key={link.label} href={link.href}>
-                {link.label}
-              </FooterLink>
-            ))}
-          </FooterColumn>
+              {legacyLinks.map((link) => (
+                <FooterLink key={link.label} href={link.href}>
+                  {link.label}
+                </FooterLink>
+              ))}
+            </FooterColumn>
+          </FooterRightBlock>
         </FooterContentMiddle>
 
         {/* DISCLAIMER */}
