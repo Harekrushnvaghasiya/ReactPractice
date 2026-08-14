@@ -1,3 +1,5 @@
+import { SPACING_TYPE, TONE } from "../components/global/constants";
+
 export interface NavbarItem {
   label: string;
   href?: string;
@@ -55,4 +57,13 @@ export interface FooterProps {
   instagramUrl?: string;
   facebookUrl?: string;
   linkedinUrl?: string;
+}
+
+export interface CtaProps {
+  tag: string;
+  title: string;
+  Content: string;
+  isBgImage?: boolean;
+  variant?: (typeof SPACING_TYPE)[keyof typeof SPACING_TYPE];
+  tone?: (typeof TONE)[keyof typeof TONE];
 }

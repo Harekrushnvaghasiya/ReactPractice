@@ -9,6 +9,8 @@ import FooterImage4 from "./FooterImage4.png"
 import FooterImage5 from "./FooterImage5.png"
 import FooterImage6 from "./FooterImage6.png"
 import FooterImage7 from "./FooterImage7.png"
+import PauseIcon from "./pauseIcon.svg"
+import Map from "./Map.png"
 
 export const Images ={
     drpicon,
@@ -21,5 +23,7 @@ export const Images ={
     FooterImage4,
     FooterImage5,
     FooterImage6,
-    FooterImage7
+    FooterImage7,
+    PauseIcon,
+    Map
 }
