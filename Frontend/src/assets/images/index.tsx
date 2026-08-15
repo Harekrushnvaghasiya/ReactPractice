@@ -11,6 +11,11 @@ import FooterImage6 from "./FooterImage6.png"
 import FooterImage7 from "./FooterImage7.png"
 import PauseIcon from "./pauseIcon.svg"
 import Map from "./Map.png"
+import HomeHero from "./HomeHero.avif"
+import Hero2 from "./Hero2.png"
+import Hero3 from "./Hero3.png"
+import Hero4 from "./Hero4.png"
+
 
 export const Images ={
     drpicon,
@@ -25,5 +30,9 @@ export const Images ={
     FooterImage6,
     FooterImage7,
     PauseIcon,
-    Map
+    Map,
+    HomeHero,
+    Hero2,
+    Hero3,
+    Hero4
 }

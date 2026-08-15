@@ -46,6 +46,7 @@
   
   /* Other colors */
   --image-linear: linear-gradient( 180deg, #1B345200 0%, #1B3452E5 90%, #1B3452 100% ); 
+  --image-gradient: linear-gradient(180deg, rgba(27, 26, 26, 0.32) 0%, #1B1A1A 100%);
 
   /* Box Shadow */
   --box-shadow-primary: 0px 3px 10px 0 #0000000D;
