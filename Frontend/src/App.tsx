@@ -2,7 +2,9 @@ import Button from "./components/buttons";
 import Footer from "./components/footer";
 import NavbarWrapper from "./components/navbarWrapper";
 import CTA from "./components/cta";
-import { SPACING_TYPE, TONE } from "./components/global/constants";
+import { HERO_SIZE, HERO_VARIANT, SPACING_TYPE, TONE } from "./components/global/constants";
+import Hero from "./components/heroSection";
+import { Images } from "./assets/images";
 
 function App() {
   return (
@@ -31,7 +33,41 @@ function App() {
       <Button title="Button" variant="disable" size="small" isShowIcon />
       <hr />
       <Button title="Button" variant="disable" size="small" /> */}
-
+      <Hero
+        title="Elevate your Mental, Physical and Emotional well-being"
+        description="Explore science-backed therapies designed to enhance recovery, reduce stress, and rejuvenate your entire being."
+        primaryButtonText="Pause Now"
+        primaryButtonLink="/"
+        maxTitleWidth={863}
+        size={HERO_SIZE.LARGE}
+        heroImage={Images.HomeHero}
+      />
+      <Hero
+        tag="All Blogs"
+        title="Elevate your Mental, Physical and Emotional well-being"
+        description="Explore science-backed therapies designed to enhance recovery, reduce stress, and rejuvenate your entire being."
+        variant={HERO_VARIANT.CENTER}
+        size={HERO_SIZE.SMALL}
+        heroImage={Images.Hero3}
+      />
+      <Hero
+        tag="Contrast Therapy"
+        title="Elevate your Mental, Physical and Emotional well-being"
+        description="Explore science-backed therapies designed to enhance recovery, reduce stress, and rejuvenate your entire being."
+        primaryButtonText="Pause Now"
+        primaryButtonLink="/"
+        variant={HERO_VARIANT.RIGHT}
+        size={HERO_SIZE.MEDIUM}
+        heroImage={Images.Hero4}
+      />
+      <Hero
+        tag="FAQ"
+        title="Answers to Your Most Common Questions"
+        description="Check out our most frequently asked questions below."
+        maxTitleWidth={724}
+        size={HERO_SIZE.SMALL}
+        heroImage={Images.Hero2}
+      />
       <CTA
         tag="FIND YOUR LOCATION"
         title="Find a Pause Near You"

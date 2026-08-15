@@ -1,5 +1,23 @@
-import { SPACING_TYPE, TONE } from "../components/global/constants";
+import {
+  BUTTON_SIZE,
+  BUTTON_VARIANTS,
+  SPACING_TYPE,
+  TONE,
+} from "../components/global/constants";
+import { HERO_VARIANT, HERO_SIZE } from "../components/global/constants";
 
+export interface BtnProps {
+  title: string | undefined;
+  onClick?: () => void;
+  isDisabled?: boolean;
+  type?: "button" | "submit" | "reset";
+  href?: string;
+  hrefTarget?: string;
+  ariaLabel?: string;
+  variant?: (typeof BUTTON_VARIANTS)[keyof typeof BUTTON_VARIANTS];
+  size?: (typeof BUTTON_SIZE)[keyof typeof BUTTON_SIZE];
+  isShowIcon?: boolean;
+}
 export interface NavbarItem {
   label: string;
   href?: string;
@@ -66,4 +84,18 @@ export interface CtaProps {
   isBgImage?: boolean;
   variant?: (typeof SPACING_TYPE)[keyof typeof SPACING_TYPE];
   tone?: (typeof TONE)[keyof typeof TONE];
+}
+
+export interface HeroProps {
+  variant?: (typeof HERO_VARIANT)[keyof typeof HERO_VARIANT];
+  size?: (typeof HERO_SIZE)[keyof typeof HERO_SIZE];
+  tag?: string;
+  title: string;
+  description: string;
+  heroImage?: string;
+  primaryButtonLink?: string;
+  primaryButtonText?: string;
+  maxWidth?: string | number;
+  maxTitleWidth?: string | number;
+  maxDescWidth?: string | number;
 }

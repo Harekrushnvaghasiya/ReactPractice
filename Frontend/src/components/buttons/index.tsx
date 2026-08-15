@@ -2,6 +2,7 @@ import React from 'react';
 import { BUTTON_SIZE, BUTTON_VARIANTS } from '../global/constants';
 import { Buttons,Icon } from './style';
 import  SVGIcon from '../../assets/Icons/SVGIcon';
+import { BtnProps } from '../../utils/appType';
 
 /**
  * Button Component
@@ -16,20 +17,7 @@ import  SVGIcon from '../../assets/Icons/SVGIcon';
  * @param {boolean} Props.isShowIcon  - show icon or not.
  */
 
-interface Props {
-    title: string | undefined;
-    onClick?: () => void;
-    isDisabled?: boolean;
-    type?: 'button' | 'submit' | 'reset';
-    href?: string;
-    hrefTarget?: string;
-    ariaLabel?: string;
-    variant?: (typeof BUTTON_VARIANTS)[keyof typeof BUTTON_VARIANTS];
-    size?: (typeof BUTTON_SIZE)[keyof typeof BUTTON_SIZE];
-    isShowIcon?: boolean;
-    
-}
-const Button: React.FC<Props> = ({
+const Button: React.FC<BtnProps> = ({
         onClick,
         isDisabled = false,
         type,

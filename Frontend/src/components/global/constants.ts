@@ -20,3 +20,15 @@ export const TONE ={
     CREAM : "cream",
     WHITE : "white",
 }
+
+export const HERO_VARIANT={
+    LEFT : "left",
+    RIGHT : "right",
+    CENTER : "center",
+}
+
+export const HERO_SIZE = {
+    LARGE : "large",
+    MEDIUM : "medium",
+    SMALL : "small",
+}
