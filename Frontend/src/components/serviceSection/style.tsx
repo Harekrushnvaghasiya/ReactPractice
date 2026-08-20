@@ -124,8 +124,6 @@ export const ServiceArrowButton = styled.button`
 `;
 
 export const ServiceBottomWrapper = styled.div`
-  /* width: calc(100% - 80px);
-  margin-inline: 40px; */
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: none;

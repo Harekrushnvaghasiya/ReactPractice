@@ -154,31 +154,59 @@ export const appLinks = [
 
 export const services = [
   {
-    id: "contrast",
     number: "01",
     title: "Contrast Therapy",
-    image: Images.ContrasTherapy,
-    description: "Experience the benefits of hot and cold therapy.",
+    description:
+      "Maximize recovery with alternating hot and cold therapies to reduce inflammation and stimulate circulation.",
+    cardImage: Images.ContrasTherapy,
   },
   {
-    id: "infrared",
     number: "02",
     title: "Infrared Sauna",
-    image: Images.ContrasTherapy,
     description:
       "Detoxify, reduce muscle tension, and promote relaxation with deep-penetrating infrared heat.",
-    featured: true,
+    cardImage: Images.infrared,
   },
   {
-    id: "float",
     number: "03",
     title: "Float",
-    image: Images.ContrasTherapy,
+    description:
+      "Experience total weightlessness in a sensory deprivation tank filled with warm Epsom salt water. Float therapy relaxes the body and quiets the mind to restore true balance.",
+    cardImage: Images.float,
   },
   {
-    id: "led",
     number: "04",
     title: "LED Light Therapy",
-    image: Images.ContrasTherapy,
+    description:
+      "Our full-body LED Light Therapy supports cellular repair, boosts ATP production, reduces inflammation, and promotes collagen for radiant, youthful skin.",
+    cardImage: Images.LEDTherapy,
+  },
+  {
+    number: "05",
+    title: "NAD+",
+    description:
+      "Supercharge your cells, repair DNA, slow aging, and reduce inflammation. This advanced treatment boosts cognition, energy, and focus. Our NAD+ IV drips and vitamin shots deliver maximum bioavailability for fast, effective results.",
+    cardImage: Images.NDA,
+  },
+  {
+    number: "06",
+    title: "IV Drips ",
+    description:
+      "The ultimate fast-track to feeling your best. Our IV drips and vitamin shots deliver essential vitamins, minerals, and nutrients directly into your bloodstream for immediate absorption with tailored formulas designed to support your unique wellness goals.",
+    cardImage: Images.IVDrips,
+  },
+  {
+    number: "07",
+    title: "Cryotherapy",
+    description:
+      "Accelerate recovery and optimize peak performance with whole-body cryotherapy. Exposure to ultra-cold temperatures decreases inflammation and promotes physical resilience.",
+    cardImage: Images.Cryotherapy,
+  },
+  {
+    number: "08",
+    title: "Compression Therapy",
+    description:
+      "Trusted by elite athletes and proven to enhance performance, Normatec Compression Therapy promotes lymphatic drainage, boosts circulation, and speeds recovery.",
+    cardImage: Images.compression,
   },
 ];
