@@ -15,7 +15,14 @@ import HomeHero from "./HomeHero.avif"
 import Hero2 from "./Hero2.png"
 import Hero3 from "./Hero3.png"
 import Hero4 from "./Hero4.png"
-
+import ContrasTherapy from "./ContrastTherapy.png"
+import infrared from "./infrared.png"
+import float from "./Float.png"
+import LEDTherapy from "./LEDTherapy.png"
+import NDA from "./NAD.png"
+import IVDrips from "./IV Drips.png"
+import Cryotherapy from "./Cryotherapy.png"
+import compression from "./Compression Therapy.png"
 
 export const Images ={
     drpicon,
@@ -34,5 +41,13 @@ export const Images ={
     HomeHero,
     Hero2,
     Hero3,
-    Hero4
+    Hero4,
+    ContrasTherapy,
+    infrared,
+    float,
+    LEDTherapy,
+    NDA,
+    IVDrips,
+    Cryotherapy,
+    compression
 }

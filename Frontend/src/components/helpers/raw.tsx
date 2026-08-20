@@ -151,3 +151,34 @@ export const appLinks = [
     image: Images.IOS,
   },
 ];
+
+export const services = [
+  {
+    id: "contrast",
+    number: "01",
+    title: "Contrast Therapy",
+    image: Images.ContrasTherapy,
+    description: "Experience the benefits of hot and cold therapy.",
+  },
+  {
+    id: "infrared",
+    number: "02",
+    title: "Infrared Sauna",
+    image: Images.ContrasTherapy,
+    description:
+      "Detoxify, reduce muscle tension, and promote relaxation with deep-penetrating infrared heat.",
+    featured: true,
+  },
+  {
+    id: "float",
+    number: "03",
+    title: "Float",
+    image: Images.ContrasTherapy,
+  },
+  {
+    id: "led",
+    number: "04",
+    title: "LED Light Therapy",
+    image: Images.ContrasTherapy,
+  },
+];
