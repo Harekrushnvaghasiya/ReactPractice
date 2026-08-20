@@ -99,3 +99,20 @@ export interface HeroProps {
   maxTitleWidth?: string | number;
   maxDescWidth?: string | number;
 }
+
+export interface ServiceItem {
+  id?: string;
+  number?: string;
+  title: string;
+  cardImage: string;
+  description?: string;
+  featured?: boolean;
+}
+
+export interface ServiceProps {
+  tag?: string;
+  title: string;
+  services: ServiceItem[];
+  onPrevious?: () => void;
+  onNext?: () => void;
+}
