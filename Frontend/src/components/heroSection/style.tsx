@@ -14,7 +14,6 @@ const getWidth = (value?: string | number) => {
   if (value === undefined) {
     return "100%";
   }
-
   return typeof value === "number" ? `${value}px` : value;
 };
 

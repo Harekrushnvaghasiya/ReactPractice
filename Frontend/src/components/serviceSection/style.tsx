@@ -174,6 +174,9 @@ export const ServiceCardTitle = styled.h3`
   @media (max-width: 991px) {
     max-width: 244px;
   }
+  @media (max-width: 449px) {
+    max-width: 210px;
+  }
 `;
 
 export const ServiceTitleBlock = styled.div`
@@ -292,7 +295,7 @@ export const ServiceCard = styled.div<{ $featured?: boolean }>`
   padding: var(--spacing-30) var(--spacing-30) 0 var(--spacing-30);
   overflow: hidden;
   border-radius: var(--spacing-8);
-
+  cursor: pointer;
 
   @media (max-width: 991px) {
     width: 324px;

@@ -210,3 +210,42 @@ export const services = [
     cardImage: Images.compression,
   },
 ];
+
+export const logos = [
+  {
+    title: "The hollywood reporter",
+    url: Images.hollywood,
+  },
+  {
+    title: "Goop",
+    url: Images.goop,
+  },
+  {
+    title: "WWD",
+    url: Images.wwd,
+  },
+  {
+    title: "Los angels",
+    url: Images.losangels,
+  },
+  {
+    title: "People",
+    url: Images.people,
+  },
+  {
+    title: "w",
+    url: Images.w,
+  },
+  {
+    title: "Forbes",
+    url: Images.forbes,
+  },
+  {
+    title: "Fast Company",
+    url: Images.fastcompany,
+  },
+  {
+    title: "NBC",
+    url: Images.nbc,
+  },
+];
