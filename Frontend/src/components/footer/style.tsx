@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Typography } from "../styles/typography";
+import { Typography } from "../../styles/typography";
 
 // MAIN FOOTER
 export const FooterWrapper = styled.footer`
@@ -87,8 +87,8 @@ export const FooterContentTop = styled.div`
     margin-bottom: 60px;
   }
   @media (max-width: 449px) {
-    gap:24px;
-    margin-bottom:36px;
+    gap: 24px;
+    margin-bottom: 36px;
   }
 `;
 
@@ -153,7 +153,7 @@ export const FooterLogoBlock = styled.div`
   margin-bottom: 28px;
   display: flex;
   flex-direction: column;
-  gap:46px;
+  gap: 46px;
   @media (max-width: 991px) {
     display: flex;
     flex-wrap: wrap;
@@ -280,7 +280,7 @@ export const FooterContentBottom = styled.div`
   @media (max-width: 449px) {
     flex-direction: column-reverse;
     align-items: flex-start;
-    gap:16px;
+    gap: 16px;
   }
 `;
 

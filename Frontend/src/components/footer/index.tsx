@@ -36,7 +36,7 @@ import {
   quickLinks,
   legacyLinks,
   socialLinks,
-} from "../helpers/raw";
+} from "../../helpers/raw";
 const Footer = () => {
   return (
     <FooterWrapper>

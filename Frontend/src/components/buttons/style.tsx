@@ -1,4 +1,4 @@
-import { Typography } from "../styles/typography";
+import { Typography } from "../../styles/typography";
 import styled, { css } from "styled-components";
 import { BUTTON_SIZE, BUTTON_VARIANTS } from "../global/constants";
 
@@ -23,7 +23,7 @@ export const Buttons = styled.button<ButtonProps>`
   cursor: pointer;
   border: 1px solid transparent;
   white-space: nowrap;
-  width:max-content;
+  width: max-content;
   svg path {
     fill: var(--text-secondary);
   }

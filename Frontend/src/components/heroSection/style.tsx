@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { HERO_SIZE, HERO_VARIANT } from "../global/constants";
-import { Typography } from "../styles/typography";
+import { Typography } from "../../styles/typography";
 
 interface HeroWrapperProps {
   $size?: (typeof HERO_SIZE)[keyof typeof HERO_SIZE];
@@ -185,10 +185,10 @@ export const HeroTag = styled.div`
   ${Typography.body_4}
   text-transform: uppercase;
   @media (max-width: 991px) {
-    margin-bottom:  var(--spacing-16);
+    margin-bottom: var(--spacing-16);
   }
   @media (max-width: 449px) {
-    margin-bottom:  var(--spacing-6);
+    margin-bottom: var(--spacing-6);
   }
 `;
 
