@@ -125,3 +125,13 @@ export interface Logo {
 export interface LogoProps {
   logos: Logo[];
 }
+
+export interface VisionProps {
+  leftImage: string;
+  rightImage: string;
+  tag: string;
+  title: string;
+  description: string;
+  primaryButtonLink?: string;
+  primaryButtonText?: string;
+}

@@ -1,4 +1,4 @@
-import { Images } from "../../assets/images";
+import { Images } from "../assets/images";
 
 export const galleryImages = [
   "/images/footer-1.jpg",

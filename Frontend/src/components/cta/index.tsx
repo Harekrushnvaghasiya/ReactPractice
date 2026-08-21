@@ -1,5 +1,10 @@
 import React from "react";
-import { TONE, SPACING_TYPE, BUTTON_VARIANTS, BUTTON_SIZE } from "../global/constants";
+import {
+  TONE,
+  SPACING_TYPE,
+  BUTTON_VARIANTS,
+  BUTTON_SIZE,
+} from "../global/constants";
 import Button from "../buttons";
 import SVGIcon from "../../assets/Icons/SVGIcon";
 import {
@@ -10,10 +15,10 @@ import {
   CTAContentText,
   CTAButtonWrapper,
   IconWrapper,
-  OuterWrapper
+  OuterWrapper,
 } from "./style";
 import { CtaProps } from "../../utils/appType";
-import { Container } from "../styles/commonStyle";
+import { Container } from "../../styles/commonStyle";
 
 /**
  * CTA Component
@@ -70,6 +75,7 @@ const CTA: React.FC<CtaProps> = ({
         </CTAWrapper>
       </Container>
     </OuterWrapper>
-  );};
+  );
+};
 
 export default CTA;

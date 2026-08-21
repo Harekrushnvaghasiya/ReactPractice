@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Typography } from "../styles/typography";
+import { Typography } from "../../styles/typography";
 // navbar wrapper
 
 export const NavbarContainer = styled.header`
@@ -8,7 +8,7 @@ export const NavbarContainer = styled.header`
   z-index: 1000;
 `;
 
-  //  DESKTOP NAVBAR
+//  DESKTOP NAVBAR
 
 export const NavbarDesktop = styled.nav`
   width: 100%;
@@ -29,15 +29,14 @@ export const NavbarDesktop = styled.nav`
     min-height: 64px;
     padding: 0 24px;
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
     .navbar-cta {
-      display:none;
+      display: none;
     }
   }
 `;
-  //  SOCIAL LINKS - LEFT SIDE
-
+//  SOCIAL LINKS - LEFT SIDE
 
 export const SocialLinks = styled.div`
   display: flex;
@@ -76,7 +75,7 @@ export const SocialLink = styled.a`
   }
 `;
 
-// center section logo + content 
+// center section logo + content
 
 export const LogoSection = styled.div`
   display: flex;
@@ -111,13 +110,13 @@ export const Navigation = styled.nav`
   justify-content: center;
   gap: 28px;
   white-space: nowrap;
-  position : relative;
+  position: relative;
   @media (max-width: 991px) {
     display: none;
   }
 `;
 
-  //  NAV ITEM
+//  NAV ITEM
 
 export const NavItem = styled.div`
   position: relative;
@@ -125,7 +124,7 @@ export const NavItem = styled.div`
   align-items: center;
 `;
 
-  //  NAV LINK
+//  NAV LINK
 
 export const NavLink = styled.a`
   display: inline-flex;
@@ -158,16 +157,16 @@ export const NavLink = styled.a`
     transform: translateY(-1px);
   }
 `;
-  //  DROPDOWN
+//  DROPDOWN
 
 export const DropdownWrapper = styled.div`
   position: absolute;
-  top: 100% ;
+  top: 100%;
   padding-top: 8px;
   // left: 50%;
   // transform: translateX(-50%);
   z-index: 1100;
-  
+
   // &::before {
   //   content: "";
   //   position: absolute;
@@ -181,14 +180,14 @@ export const DropdownWrapper = styled.div`
 `;
 
 export const DropdownContent = styled.div`
- min-width: 210px;
+  min-width: 210px;
   padding: 18px 0;
   background: #ffffff;
   border-radius: 6px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  `
-  //  DROPDOWN LINK
+`;
+//  DROPDOWN LINK
 
 export const DropdownLink = styled.a`
   display: block;
@@ -213,7 +212,7 @@ export const DropdownLink = styled.a`
   }
 `;
 
-  //  MOBILE MENU BUTTON
+//  MOBILE MENU BUTTON
 
 export const MobileMenuButton = styled.button`
   display: none;

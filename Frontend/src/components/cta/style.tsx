@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { TONE, SPACING_TYPE } from "../global/constants";
-import { Typography } from "../styles/typography";
+import { Typography } from "../../styles/typography";
 import { Images } from "../../assets/images";
 
 interface CTAWrapperProps {
@@ -167,7 +167,7 @@ export const IconWrapper = styled.div`
     }
   }
   @media (max-width: 449px) {
-    svg{
+    svg {
       display: none;
     }
   }

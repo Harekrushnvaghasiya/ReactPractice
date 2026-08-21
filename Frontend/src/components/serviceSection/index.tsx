@@ -21,7 +21,7 @@ import {
   ServiceDescription,
   ServiceCardArrow,
 } from "./style";
-import { Container } from "../styles/commonStyle";
+import { Container } from "../../styles/commonStyle";
 
 const Service: React.FC<ServiceProps> = ({
   tag,
@@ -39,7 +39,8 @@ const Service: React.FC<ServiceProps> = ({
     const slider = sliderRef.current;
     if (!slider) return;
     const atStart = slider.scrollLeft <= 1;
-    const atEnd = slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1;
+    const atEnd =
+      slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1;
     setIsAtStart(atStart);
     setIsAtEnd(atEnd);
   };
@@ -91,7 +92,7 @@ const Service: React.FC<ServiceProps> = ({
     });
     onNext?.();
   };
-  
+
   return (
     <ServiceWrapper>
       <Container>

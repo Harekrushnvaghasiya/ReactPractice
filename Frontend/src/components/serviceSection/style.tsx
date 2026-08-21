@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Typography } from "../styles/typography";
+import { Typography } from "../../styles/typography";
 
 export const ServiceWrapper = styled.section`
   width: 100%;
