@@ -1,28 +1,25 @@
 import drpicon from "./drpdicon.svg"
-import googlelogo from "./Google Play.png"
-import IOS  from "./IOS.png"
+import googlelogo from "./Google Play.webp"
+import IOS  from "./IOS.webp"
 import logo from "./logo.svg"
-import FooterImage1 from "./FooterImage1.png"
-import FooterImage2 from "./FooterImage2.png"
-import FooterImage3 from "./FooterImage3.png"
-import FooterImage4 from "./FooterImage4.png"
-import FooterImage5 from "./FooterImage5.png"
-import FooterImage6 from "./FooterImage6.png"
-import FooterImage7 from "./FooterImage7.png"
+import FooterImage1 from "./FooterImage1.avif"
+import FooterImage2 from "./FooterImage2.avif"
+import FooterImage3 from "./FooterImage3.avif"
+import FooterImage4 from "./FooterImage4.avif"
+import FooterImage5 from "./FooterImage5.avif"
+import FooterImage6 from "./FooterImage6.avif"
+import FooterImage7 from "./FooterImage7.avif"
 import PauseIcon from "./pauseIcon.svg"
-import Map from "./Map.png"
+import Map from "./Map.avif"
 import HomeHero from "./HomeHero.avif"
-import Hero2 from "./Hero2.png"
-import Hero3 from "./Hero3.png"
-import Hero4 from "./Hero4.png"
-import ContrasTherapy from "./ContrastTherapy.png"
-import infrared from "./infrared.png"
-import float from "./Float.png"
-import LEDTherapy from "./LEDTherapy.png"
-import NDA from "./NAD.png"
-import IVDrips from "./IV Drips.png"
-import Cryotherapy from "./Cryotherapy.png"
-import compression from "./Compression Therapy.png"
+import ContrasTherapy from "./ContrastTherapy.avif"
+import infrared from "./infrared.avif"
+import float from "./Float.avif"
+import LEDTherapy from "./LEDTherapy.avif"
+import NDA from "./NAD.avif"
+import IVDrips from "./IV Drips.avif"
+import Cryotherapy from "./Cryotherapy.avif"
+import compression from "./Compression Therapy.avif"
 import hollywood from "./hollywood.svg"
 import nbc from "./nbc.svg"
 import goop from "./goop.svg"
@@ -32,8 +29,8 @@ import fastcompany from "./fastcompany.svg"
 import losangels from "./losangels.svg"
 import forbes from "./forbes.svg"
 import people from "./people.svg"
-import VisionLeft from "./our-vision-left.png"
-import VisionRight from "./our-vision-right.png"
+import VisionLeft from "./our-vision-left.avif"
+import VisionRight from "./our-vision-right.avif"
 
 export const Images ={
     drpicon,
@@ -50,9 +47,6 @@ export const Images ={
     PauseIcon,
     Map,
     HomeHero,
-    Hero2,
-    Hero3,
-    Hero4,
     ContrasTherapy,
     infrared,
     float,
