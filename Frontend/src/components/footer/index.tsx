@@ -28,7 +28,16 @@ import {
   FooterRightBlock,
 } from "./style";
 
-import { Images } from "../../assets/images";
+import FooterImage1 from "../../assets/images/FooterImage1.avif";
+import FooterImage2 from "../../assets/images/FooterImage2.avif";
+import FooterImage3 from "../../assets/images/FooterImage3.avif";
+import FooterImage4 from "../../assets/images/FooterImage4.avif";
+import FooterImage5 from "../../assets/images/FooterImage5.avif";
+import FooterImage6 from "../../assets/images/FooterImage6.avif";
+import FooterImage7 from "../../assets/images/FooterImage7.avif";
+import googlelogo from "../../assets/images/Google Play.webp";
+import logo from "../../assets/images/logo.svg";
+import IOS from "../../assets/images/IOS.webp";
 import SVGIcon from "../../assets/Icons/SVGIcon";
 import Button from "../buttons";
 import {
@@ -43,11 +52,11 @@ const Footer = () => {
       {/* Image Gallery */}
       <FooterGallery>
         <FooterGalleryItem>
-          <FooterGalleryImage src={Images.FooterImage1} alt="Pause studio" />
+          <FooterGalleryImage src={FooterImage1} alt="Pause studio" />
         </FooterGalleryItem>
 
         <FooterGalleryItem>
-          <FooterGalleryImage src={Images.FooterImage2} alt="Pause studio" />
+          <FooterGalleryImage src={FooterImage2} alt="Pause studio" />
 
           {/* <InstagramButton
             href="https://instagram.com"
@@ -60,20 +69,20 @@ const Footer = () => {
         </FooterGalleryItem>
 
         <FooterGalleryItem>
-          <FooterGalleryImage src={Images.FooterImage3} alt="Pause studio" />
+          <FooterGalleryImage src={FooterImage3} alt="Pause studio" />
         </FooterGalleryItem>
 
         <FooterGalleryItem>
-          <FooterGalleryImage src={Images.FooterImage4} alt="Pause studio" />
+          <FooterGalleryImage src={FooterImage4} alt="Pause studio" />
         </FooterGalleryItem>
         <FooterGalleryItem>
-          <FooterGalleryImage src={Images.FooterImage5} alt="Pause studio" />
+          <FooterGalleryImage src={FooterImage5} alt="Pause studio" />
         </FooterGalleryItem>
         <FooterGalleryItem>
-          <FooterGalleryImage src={Images.FooterImage6} alt="Pause studio" />
+          <FooterGalleryImage src={FooterImage6} alt="Pause studio" />
         </FooterGalleryItem>
         <FooterGalleryItem>
-          <FooterGalleryImage src={Images.FooterImage7} alt="Pause studio" />
+          <FooterGalleryImage src={FooterImage7} alt="Pause studio" />
         </FooterGalleryItem>
       </FooterGallery>
 
@@ -103,15 +112,15 @@ const Footer = () => {
         <FooterContentMiddle>
           {/* LOGO + APPS */}
           <FooterLogoBlock>
-            <FooterLogo src={Images.logo} alt="Pause" />
+            <FooterLogo src={logo} alt="Pause" />
 
             <FooterApps>
               <FooterAppLink href="#">
-                <img src={Images.IOS} alt="Download on App Store" />
+                <img src={IOS} alt="Download on App Store" />
               </FooterAppLink>
 
               <FooterAppLink href="#">
-                <img src={Images.googlelogo} alt="Get it on Google Play" />
+                <img src={googlelogo} alt="Get it on Google Play" />
               </FooterAppLink>
             </FooterApps>
           </FooterLogoBlock>

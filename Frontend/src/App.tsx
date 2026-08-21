@@ -6,11 +6,12 @@ import {
   TONE,
 } from "./components/global/constants";
 import Hero from "./components/heroSection";
-import { Images } from "./assets/images";
+import HomeHero from "./assets/images/HomeHero.avif";
+import VisionLeft from "./assets/images/our-vision-left.avif";
+import VisionRight from "./assets/images/our-vision-right.avif";
 import Service from "./components/serviceSection";
 import { logos, services } from "./helpers/raw";
 import LogoSection from "./components/logoSection";
-import OurVision from "./components/visionSection";
 import OurVisionSection from "./components/visionSection";
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         primaryButtonLink="/"
         maxTitleWidth={863}
         size={HERO_SIZE.LARGE}
-        heroImage={Images.HomeHero}
+        heroImage={HomeHero}
       />
 
       <Service
@@ -35,8 +36,8 @@ function App() {
       <LogoSection logos={logos} />
 
       <OurVisionSection
-        leftImage={Images.VisionLeft}
-        rightImage={Images.VisionRight}
+        leftImage={VisionLeft}
+        rightImage={VisionRight}
         tag="OUR VISION"
         title="The Solution to Modern Living"
         description="Stress, anxiety, lack of quality sleep, inefficient recovery and compromised immunity are universal problems.  Combining the most advanced recovery modalities with inspired design and experiential service, Pause is redefining one-stop-wellness for today’s demanding lifestyle."
