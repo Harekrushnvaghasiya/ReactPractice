@@ -25,7 +25,6 @@ import {
 
 import SVGIcon from "../../../assets/Icons/SVGIcon";
 import Button from "../../buttons";
-import { Images } from "../../../assets/images";
 import { NavbarProps } from "../../../utils/appType";
 
 const ResponsiveNavbar = ({
