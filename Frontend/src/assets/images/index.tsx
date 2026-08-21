@@ -32,6 +32,8 @@ import fastcompany from "./fastcompany.svg"
 import losangels from "./losangels.svg"
 import forbes from "./forbes.svg"
 import people from "./people.svg"
+import VisionLeft from "./our-vision-left.png"
+import VisionRight from "./our-vision-right.png"
 
 export const Images ={
     drpicon,
@@ -67,6 +69,7 @@ export const Images ={
     w,
     wwd,
     forbes,
-    fastcompany
-
+    fastcompany,
+    VisionLeft,
+    VisionRight
 }
