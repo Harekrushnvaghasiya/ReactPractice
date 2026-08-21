@@ -116,3 +116,12 @@ export interface ServiceProps {
   onPrevious?: () => void;
   onNext?: () => void;
 }
+
+export interface Logo {
+  url: string;
+  title?: string;
+}
+
+export interface LogoProps {
+  logos: Logo[];
+}

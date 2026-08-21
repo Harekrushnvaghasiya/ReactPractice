@@ -23,6 +23,15 @@ import NDA from "./NAD.png"
 import IVDrips from "./IV Drips.png"
 import Cryotherapy from "./Cryotherapy.png"
 import compression from "./Compression Therapy.png"
+import hollywood from "./hollywood.svg"
+import nbc from "./nbc.svg"
+import goop from "./goop.svg"
+import w from "./w.svg"
+import wwd from "./wwd.svg"
+import fastcompany from "./fastcompany.svg"
+import losangels from "./losangels.svg"
+import forbes from "./forbes.svg"
+import people from "./people.svg"
 
 export const Images ={
     drpicon,
@@ -49,5 +58,15 @@ export const Images ={
     NDA,
     IVDrips,
     Cryotherapy,
-    compression
+    compression,
+    hollywood,
+    nbc,
+    goop,
+    people,
+    losangels,
+    w,
+    wwd,
+    forbes,
+    fastcompany
+
 }

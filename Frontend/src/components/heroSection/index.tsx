@@ -12,8 +12,6 @@ import {
 } from "./style";
 import Button from "../buttons";
 import { HERO_SIZE, HERO_VARIANT } from "../global/constants";
-import { Images } from "../../assets/images";
-import { Container } from "../styles/commonStyle";
 
 const Hero: React.FC<HeroProps> = ({
   tag,
