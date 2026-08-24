@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { TONE, SPACING_TYPE } from "../global/constants";
 import { Typography } from "../../styles/typography";
-import MAP from "../../assets/images/Map.avif";
+import Map from "../../assets/images/Map.avif";
 
 interface CTAWrapperProps {
   $isBgImage?: boolean;
@@ -82,7 +82,7 @@ export const CTAWrapper = styled.section<CTAWrapperProps>`
   ${(Props) =>
     Props.$isBgImage &&
     css`
-      background-image: url(${MAP});
+      background-image: url(${Map});
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
