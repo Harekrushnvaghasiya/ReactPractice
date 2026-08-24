@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import {
   ResponsiveContainer,
   ResponsiveHeader,
-  ResponsiveLogo,
   CloseButton,
   ResponsiveContent,
   MobileNavigation,
@@ -56,7 +55,6 @@ const ResponsiveNavbar = ({
       {/* HEADER */}
       <ResponsiveHeader>
         <Link to="/" onClick={onClose}>
-          <ResponsiveLogo src={logo} alt={logoAlt} />
           <Image className="responsive-logo" src={logo} alt={logoAlt} width={80} height={'auto'}/>
         </Link>
 
