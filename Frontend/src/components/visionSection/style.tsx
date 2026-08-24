@@ -26,13 +26,11 @@ export const VisionWrapper = styled.div`
 export const VisionImageWrapper = styled.div`
   display: flex;
   gap: var(--spacing-20);
-  img {
-    border-radius: 8px;
-    object-fit: cover;
+  .vision-image {
     aspect-ratio: auto;
   }
   @media (max-width: 1024px) {
-    img {
+    .vision-image {
       width: 250px;
       height: 530px;
     }
@@ -40,7 +38,7 @@ export const VisionImageWrapper = styled.div`
   @media (max-width: 991px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    img {
+    .vision-image {
       width: 100%;
       height: 100%;
     }
@@ -49,7 +47,7 @@ export const VisionImageWrapper = styled.div`
     width: 100%;
     gap: 9px;
     grid-template-columns: repeat(1, 1fr);
-    img {
+    .vision-image {
       height: 305px;
     }
   }

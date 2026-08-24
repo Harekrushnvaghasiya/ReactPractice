@@ -77,6 +77,24 @@ export interface FooterProps {
   linkedinUrl?: string;
 }
 
+export interface ImageProps {
+  src: string;
+  alt?: string;
+  width?: number | `${number}` | string;
+  height?: number | `${number}` | string;
+  borderRadius?: string;
+  objectFit?: "cover" | "contain" | "fill" | "none" | "scale-down" | "unset";
+  loading?: "eager" | "lazy";
+  priority?: boolean;
+  objectPosition?: string;
+  className?:string;
+}
+
+interface ImgProps {
+  borderRadius?: string;
+  objectFit?: string;
+}
+
 export interface CtaProps {
   tag: string;
   title: string;

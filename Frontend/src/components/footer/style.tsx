@@ -25,22 +25,26 @@ export const FooterGalleryItem = styled.div`
   width: 418px;
   height: 300px;
   overflow: hidden;
+  cursor: pointer;
+
+  .footer-gallary-image {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    .footer-gallary-image {
+      transform: scale(1.03);
+    }
+  }
+
   @media (max-width: 449px) {
     width: 196px;
     height: 180px;
   }
 `;
 
-export const FooterGalleryImage = styled.img`
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-  ${FooterGalleryItem}:hover & {
-    transform: scale(1.03);
-  }
-`;
+
 
 // INSTAGRAM OVER GALLERY
 export const InstagramButton = styled.a`
@@ -154,6 +158,12 @@ export const FooterLogoBlock = styled.div`
   display: flex;
   flex-direction: column;
   gap: 46px;
+  .footer-logo {
+    display: block;
+    @media (max-width: 449px) {
+      width: 126px;
+    }
+  }
   @media (max-width: 991px) {
     display: flex;
     flex-wrap: wrap;
@@ -168,14 +178,6 @@ export const FooterLogoBlock = styled.div`
   }
 `;
 
-export const FooterLogo = styled.img`
-  width: 153px;
-  height: auto;
-  display: block;
-  @media (max-width: 449px) {
-    width: 126px;
-  }
-`;
 
 // APP STORE LINKS
 export const FooterApps = styled.div`
@@ -190,10 +192,8 @@ export const FooterApps = styled.div`
 export const FooterAppLink = styled.a`
   display: block;
   height: 40px;
-  img {
+  div {
     display: block;
-    width: auto;
-    height: 40px;
   }
 `;
 

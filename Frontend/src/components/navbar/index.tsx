@@ -9,7 +9,6 @@ import {
   SocialLinks,
   SocialLink,
   LogoSection,
-  Logo,
   Navigation,
   NavItem,
   NavLink,
@@ -23,6 +22,7 @@ import {
 import Button from "../buttons";
 import SVGIcon from "../../assets/Icons/SVGIcon";
 import { NavbarProps } from "../../utils/appType";
+import Image from "../image";
 
 const Navbar = ({
   logo,
@@ -75,10 +75,14 @@ const Navbar = ({
         <LogoSection>
           {/* Logo */}
           <Link to="/">
-            <Logo
+            <Image 
+              className="logo"
               src={logo}
-              alt={logoAlt}
-            />
+              alt={logoAlt} 
+              width={82}  
+              height={'auto'}
+              object-fit= 'contain'
+              />
           </Link>
 
           {/* Navigation */}
