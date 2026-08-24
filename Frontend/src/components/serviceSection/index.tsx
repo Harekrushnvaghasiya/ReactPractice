@@ -16,7 +16,6 @@ import {
   ServiceNumber,
   ServiceCardTitle,
   ServiceImageWrapper,
-  ServiceImage,
   ServiceCardBlock,
   ServiceDescription,
   ServiceCardArrow,
