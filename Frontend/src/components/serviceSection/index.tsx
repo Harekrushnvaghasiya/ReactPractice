@@ -22,6 +22,7 @@ import {
   ServiceCardArrow,
 } from "./style";
 import { Container } from "../../styles/commonStyle";
+import Image from "../image";
 
 const Service: React.FC<ServiceProps> = ({
   tag,
@@ -145,7 +146,14 @@ const Service: React.FC<ServiceProps> = ({
                 className="service-image-wrapper"
                 $featured={service.featured}
               >
-                <ServiceImage src={service.cardImage} alt={service.title} />
+                <Image
+                  className="service-image"
+                  src={service.cardImage}
+                  alt={service.title}
+                  height={"100%"}
+                  width={"100%"}
+                  objectFit="cover"
+                />
 
                 <ServiceCardArrow
                   className="service-card-arrow"

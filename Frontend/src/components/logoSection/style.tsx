@@ -42,15 +42,12 @@ export const ClientLogo = styled.div`
   align-items: center;
   justify-content: center;
 
-  img {
+  .client-logo {
     display: block;
-    width: auto;
-    height: 32px;
-    object-fit: contain;
   }
 
   @media (max-width: 449px) {
-    img {
+    .client-logo {
       height: 18px;
     }
   }

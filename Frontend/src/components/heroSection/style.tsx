@@ -81,11 +81,8 @@ export const HeroImageWrapper = styled.div`
     z-index: 1;
   }
 
-  img {
-    width: 100%;
-    height: 100%;
+  .hero-img {
     display: block;
-    object-fit: cover;
   }
 `;
 

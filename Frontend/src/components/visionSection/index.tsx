@@ -11,6 +11,7 @@ import {
 } from "./style";
 import Button from "../buttons";
 import { isEmpty } from "../../helpers/common";
+import Image from "../image";
 
 const OurVisionSection: React.FC<VisionProps> = ({
   leftImage,
@@ -27,8 +28,24 @@ const OurVisionSection: React.FC<VisionProps> = ({
     <VisionSection>
       <VisionWrapper>
         <VisionImageWrapper>
-          <img src={leftImage} alt="" />
-          <img src={rightImage} alt="" />
+          <Image
+            className="vision-image"
+            src={leftImage}
+            alt=""
+            height={"auto"}
+            width={"auto"}
+            objectFit="cover"
+            borderRadius="8px"
+          />
+          <Image
+            className="vision-image"
+            src={rightImage}
+            alt=""
+            height={"auto"}
+            width={"auto"}
+            objectFit="cover"
+            borderRadius="8px"
+          />
         </VisionImageWrapper>
         <VisionContentWrapper>
           <VisionTag>{tag}</VisionTag>
