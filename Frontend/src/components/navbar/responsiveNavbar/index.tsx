@@ -26,6 +26,7 @@ import {
 import SVGIcon from "../../../assets/Icons/SVGIcon";
 import Button from "../../buttons";
 import { NavbarProps } from "../../../utils/appType";
+import Image from "../../image";
 
 const ResponsiveNavbar = ({
   isOpen,
@@ -55,10 +56,8 @@ const ResponsiveNavbar = ({
       {/* HEADER */}
       <ResponsiveHeader>
         <Link to="/" onClick={onClose}>
-          <ResponsiveLogo
-            src={logo}
-            alt={logoAlt}
-          />
+          <ResponsiveLogo src={logo} alt={logoAlt} />
+          <Image className="responsive-logo" src={logo} alt={logoAlt} width={80} height={'auto'}/>
         </Link>
 
         <CloseButton
@@ -74,14 +73,11 @@ const ResponsiveNavbar = ({
       <ResponsiveContent>
         <MobileNavigation>
           {items.map((item, index) => {
-            const hasChildren =
-              Boolean(item.children?.length);
-// normal link
+            const hasChildren = Boolean(item.children?.length);
+            // normal link
             if (!hasChildren) {
               return (
-                <MobileNavItem
-                  key={item.label}
-                >
+                <MobileNavItem key={item.label}>
                   <MobileNavLink
                     as={Link}
                     to={item.href ?? "#"}
@@ -93,43 +89,40 @@ const ResponsiveNavbar = ({
               );
             }
 
-// dropdown
+            // dropdown
 
-            const isOpen =
-              openDropdown === index;
+            const isOpen = openDropdown === index;
 
             return (
-              <MobileNavItem
-                key={item.label}
-              >
+              <MobileNavItem key={item.label}>
                 <MobileDropdownButton
                   type="button"
-                  onClick={() =>
-                    toggleDropdown(index)
-                  }
+                  onClick={() => toggleDropdown(index)}
                   aria-expanded={isOpen}
                 >
                   <span>{item.label}</span>
 
-                  <SVGIcon className="dropdown-icon" name="dropdown-icon" fill="var(--text-secondary)" height="20" width="20"/>
+                  <SVGIcon
+                    className="dropdown-icon"
+                    name="dropdown-icon"
+                    fill="var(--text-secondary)"
+                    height="20"
+                    width="20"
+                  />
                 </MobileDropdownButton>
 
                 {isOpen && (
                   <MobileDropdown>
-                    {item.children?.map(
-                      (child) => (
-                        <MobileDropdownLink
-                          key={child.label}
-                          as={Link}
-                          to={
-                            child.href ?? "#"
-                          }
-                          onClick={onClose}
-                        >
-                          {child.label}
-                        </MobileDropdownLink>
-                      ),
-                    )}
+                    {item.children?.map((child) => (
+                      <MobileDropdownLink
+                        key={child.label}
+                        as={Link}
+                        to={child.href ?? "#"}
+                        onClick={onClose}
+                      >
+                        {child.label}
+                      </MobileDropdownLink>
+                    ))}
                   </MobileDropdown>
                 )}
               </MobileNavItem>
@@ -139,43 +132,40 @@ const ResponsiveNavbar = ({
         <MobileFooter>
           {/* FOOTER */}
 
-        <LogosWrapper> 
-          {/* SOCIAL ICONS */}
-          {socialLinks.length > 0 && (
-            <MobileSocialLinks>
-              {socialLinks.map((social) => (
-                <MobileSocialLink
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={social.label}
-                >
-                <SVGIcon name={social.label} height="20" width="20" />
-                </MobileSocialLink>
-              ))}
-            </MobileSocialLinks>
-          )}
+          <LogosWrapper>
+            {/* SOCIAL ICONS */}
+            {socialLinks.length > 0 && (
+              <MobileSocialLinks>
+                {socialLinks.map((social) => (
+                  <MobileSocialLink
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={social.label}
+                  >
+                    <SVGIcon name={social.label} height="20" width="20" />
+                  </MobileSocialLink>
+                ))}
+              </MobileSocialLinks>
+            )}
 
-          {/* APP STORE LINKS */}
-          {appLinks.length > 0 && (
-            <MobileAppLinks>
-              {appLinks.map((app) => (
-                <MobileAppLink
-                  key={app.label}
-                  href={app.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={app.image}
-                    alt={app.label}
-                  />
-                </MobileAppLink>
-              ))}
-            </MobileAppLinks>
-          )}
-          </LogosWrapper>  
+            {/* APP STORE LINKS */}
+            {appLinks.length > 0 && (
+              <MobileAppLinks>
+                {appLinks.map((app) => (
+                  <MobileAppLink
+                    key={app.label}
+                    href={app.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image className="app-logo" src={app.image} alt={app.label} width={105} height={'auto'}/>
+                  </MobileAppLink>
+                ))}
+              </MobileAppLinks>
+            )}
+          </LogosWrapper>
 
           {/* BOOK NOW */}
           {cta && (

@@ -12,6 +12,7 @@ import {
 } from "./style";
 import Button from "../buttons";
 import { HERO_SIZE, HERO_VARIANT } from "../global/constants";
+import Image from "../image";
 
 const Hero: React.FC<HeroProps> = ({
   tag,
@@ -27,12 +28,12 @@ const Hero: React.FC<HeroProps> = ({
   heroImage
 }) => {
   const isShowButton = primaryButtonText && primaryButtonLink;
-
+  const height = size === HERO_SIZE.LARGE ? 860 : HERO_SIZE.MEDIUM ? 660 : 550;
   return (
     <HeroWrapper $size={size}>
       {/* HERO IMAGE */}
       <HeroImageWrapper>
-        {heroImage && <img src={heroImage} alt="" />}
+        {heroImage && <Image src={heroImage} alt="" className="hero-img" height={height} width={'100%'} objectFit="cover" objectPosition="center" priority/>}
       </HeroImageWrapper>
 
       {/* HERO CONTENT */}
@@ -50,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({
 
           {/* BUTTON */}
           {isShowButton && (
-          <ButtonWrapper>
+            <ButtonWrapper>
               <Button
                 title={primaryButtonText}
                 href={primaryButtonLink}
@@ -59,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({
                 variant="secondary"
               />
             </ButtonWrapper>
-            )}
+          )}
         </HeroInnerWrapper>
       </div>
     </HeroWrapper>

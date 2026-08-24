@@ -189,14 +189,7 @@ export const ServiceTitleBlock = styled.div`
   z-index: 5;
 `;
 
-export const ServiceImage = styled.img`
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-  transform: scale(1);
-`;
+
 
 export const ServiceDescription = styled.p`
   padding-bottom: 24px;
@@ -268,6 +261,11 @@ export const ServiceImageWrapper = styled.div<{ $featured?: boolean }>`
     height 0.6s cubic-bezier(0.22, 1, 0.36, 1),
     transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
+  .service-image {
+    display: block;
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    transform: scale(1);
+  }
   @media (max-width: 1439px) and (min-width: 992px) {
     height: 400px;
   }

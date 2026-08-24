@@ -84,21 +84,15 @@ export const LogoSection = styled.div`
   justify-content: center;
   gap: 8px;
   min-width: 0;
-
+  .logo {
+    display: block;
+  }
   @media (max-width: 991px) {
     align-items: flex-start;
     justify-self: start;
-  }
-`;
-// logo
-
-export const Logo = styled.img`
-  display: block;
-  width: 82px;
-  height: auto;
-  object-fit: contain;
-  @media (max-width: 991px) {
-    width: 80px;
+    .logo {
+      width: 80px;
+    }
   }
 `;
 

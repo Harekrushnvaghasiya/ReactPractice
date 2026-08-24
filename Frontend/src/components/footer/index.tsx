@@ -2,7 +2,6 @@ import {
   FooterWrapper,
   FooterGallery,
   FooterGalleryItem,
-  FooterGalleryImage,
   InstagramButton,
   FooterContentWrapper,
   FooterContentTop,
@@ -12,7 +11,6 @@ import {
   FooterNewsletterInput,
   FooterContentMiddle,
   FooterLogoBlock,
-  FooterLogo,
   FooterApps,
   FooterAppLink,
   FooterColumn,
@@ -46,17 +44,32 @@ import {
   legacyLinks,
   socialLinks,
 } from "../../helpers/raw";
+import Image from "../image";
 const Footer = () => {
   return (
     <FooterWrapper>
       {/* Image Gallery */}
       <FooterGallery>
         <FooterGalleryItem>
-          <FooterGalleryImage src={FooterImage1} alt="Pause studio" />
+          <Image
+            className="footer-gallary-image"
+            src={FooterImage1}
+            alt="Pause studio"
+            height={"100%"}
+            width={"100%"}
+            objectFit="cover"
+          />
         </FooterGalleryItem>
 
         <FooterGalleryItem>
-          <FooterGalleryImage src={FooterImage2} alt="Pause studio" />
+          <Image
+            className="footer-gallary-image"
+            src={FooterImage2}
+            alt="Pause studio"
+            height={"100%"}
+            width={"100%"}
+            objectFit="cover"
+          />
 
           {/* <InstagramButton
             href="https://instagram.com"
@@ -69,20 +82,55 @@ const Footer = () => {
         </FooterGalleryItem>
 
         <FooterGalleryItem>
-          <FooterGalleryImage src={FooterImage3} alt="Pause studio" />
+          <Image
+            className="footer-gallary-image"
+            src={FooterImage3}
+            alt="Pause studio"
+            height={"100%"}
+            width={"100%"}
+            objectFit="cover"
+          />
         </FooterGalleryItem>
 
         <FooterGalleryItem>
-          <FooterGalleryImage src={FooterImage4} alt="Pause studio" />
+          <Image
+            className="footer-gallary-image"
+            src={FooterImage4}
+            alt="Pause studio"
+            height={"100%"}
+            width={"100%"}
+            objectFit="cover"
+          />
         </FooterGalleryItem>
         <FooterGalleryItem>
-          <FooterGalleryImage src={FooterImage5} alt="Pause studio" />
+          <Image
+            className="footer-gallary-image"
+            src={FooterImage5}
+            alt="Pause studio"
+            height={"100%"}
+            width={"100%"}
+            objectFit="cover"
+          />
         </FooterGalleryItem>
         <FooterGalleryItem>
-          <FooterGalleryImage src={FooterImage6} alt="Pause studio" />
+          <Image
+            className="footer-gallary-image"
+            src={FooterImage6}
+            alt="Pause studio"
+            height={"100%"}
+            width={"100%"}
+            objectFit="cover"
+          />
         </FooterGalleryItem>
         <FooterGalleryItem>
-          <FooterGalleryImage src={FooterImage7} alt="Pause studio" />
+          <Image
+            className="footer-gallary-image"
+            src={FooterImage7}
+            alt="Pause studio"
+            height={"100%"}
+            width={"100%"}
+            objectFit="cover"
+          />
         </FooterGalleryItem>
       </FooterGallery>
 
@@ -112,15 +160,25 @@ const Footer = () => {
         <FooterContentMiddle>
           {/* LOGO + APPS */}
           <FooterLogoBlock>
-            <FooterLogo src={logo} alt="Pause" />
+            <Image className="footer-logo" src={logo} alt="Pause" width={153} height={'auto'} />
 
             <FooterApps>
               <FooterAppLink href="#">
-                <img src={IOS} alt="Download on App Store" />
+                <Image
+                  src={IOS}
+                  alt="Download on App Store"
+                  width={"auto"}
+                  height={40}
+                />
               </FooterAppLink>
 
               <FooterAppLink href="#">
-                <img src={googlelogo} alt="Get it on Google Play" />
+                <Image
+                  src={googlelogo}
+                  alt="Get it on Google Play"
+                  width={"auto"}
+                  height={40}
+                />
               </FooterAppLink>
             </FooterApps>
           </FooterLogoBlock>

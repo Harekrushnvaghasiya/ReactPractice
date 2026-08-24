@@ -29,15 +29,11 @@ export const ResponsiveHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 24px;
-  border-bottom: 1px solid
-    rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   box-sizing: border-box;
-`;
-
-export const ResponsiveLogo = styled.img`
-  width: 80px;
-  height: auto;
-  display: block;
+  .responsive-logo {
+    display: block;
+  }
 `;
 
 export const CloseButton = styled.button`
@@ -152,10 +148,8 @@ export const MobileAppLinks = styled.div`
 
 export const MobileAppLink = styled.a`
   display: block;
-  img {
+  .app-logo {
     display: block;
-    width: 105px;
-    height: auto;
   }
 `;
 
