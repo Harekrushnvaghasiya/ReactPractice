@@ -1,9 +1,7 @@
 import CTA from "./components/cta";
 import {
   HERO_SIZE,
-  HERO_VARIANT,
   SPACING_TYPE,
-  TONE,
 } from "./components/global/constants";
 import Hero from "./components/heroSection";
 import HomeHero from "./assets/images/HomeHero.avif";

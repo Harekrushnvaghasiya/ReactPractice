@@ -33,11 +33,22 @@ const Hero: React.FC<HeroProps> = ({
     <HeroWrapper $size={size}>
       {/* HERO IMAGE */}
       <HeroImageWrapper>
-        {heroImage && <Image src={heroImage} alt="" className="hero-img" height={height} width={'100%'} objectFit="cover" objectPosition="center" priority/>}
+        {heroImage && (
+          <Image
+            src={heroImage}
+            alt=""
+            className="hero-img"
+            height={height}
+            width={"100%"}
+            objectFit="cover"
+            objectPosition="center"
+            priority
+          />
+        )}
       </HeroImageWrapper>
 
       {/* HERO CONTENT */}
-      <div className="div">
+      <div className="hero-content">
         <HeroInnerWrapper $variant={variant} $maxWidth={maxWidth}>
           {tag && <HeroTag>{tag}</HeroTag>}
 
