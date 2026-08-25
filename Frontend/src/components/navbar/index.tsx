@@ -119,8 +119,6 @@ const Navbar = ({
                       )}
                     </NavLink>
                   ) : (
-                   
-//  DROPDOWN TRIGGER
                 
                     <NavLink
                       as="button"

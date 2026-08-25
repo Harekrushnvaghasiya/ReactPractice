@@ -244,6 +244,7 @@ const Footer = () => {
             {socialLinks.map((social) => {
               return (
                 <FooterSocialLink
+                  key={social.label}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"

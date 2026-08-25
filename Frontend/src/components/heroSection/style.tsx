@@ -23,7 +23,7 @@ export const HeroWrapper = styled.div<HeroWrapperProps>`
   align-items: flex-end;
   width: 100%;
   overflow: hidden;
-  .div {
+  .hero-content {
     max-width: 1440px;
     width: 100%;
     padding-inline: 72px;
