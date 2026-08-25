@@ -50,7 +50,9 @@ const Service: React.FC<ServiceProps> = ({
     if (!slider) return;
     // Check initial position
     checkScrollPosition();
-    slider.addEventListener("scroll", checkScrollPosition);
+    slider.addEventListener("scroll", checkScrollPosition,{
+      passive:true,
+    });
     window.addEventListener("resize", checkScrollPosition);
     return () => {
       slider.removeEventListener("scroll", checkScrollPosition);
