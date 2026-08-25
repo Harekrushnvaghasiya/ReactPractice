@@ -65,7 +65,7 @@ const Service: React.FC<ServiceProps> = ({
       slider.removeEventListener("scroll", checkScrollPosition);
       window.removeEventListener("resize", checkScrollPosition);
     };
-  }, [services]);
+  }, []);
 
   const getScrollAmount = () => {
     const slider = sliderRef.current;
