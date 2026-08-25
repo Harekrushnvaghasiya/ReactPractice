@@ -104,10 +104,10 @@ export interface ImageProps {
   className?:string;
 }
 
-interface ImgProps {
-  borderRadius?: string;
-  objectFit?: string;
-}
+// interface ImgProps {
+//   borderRadius?: string;
+//   objectFit?: string;
+// }
 
 export interface CtaProps {
   tag: string;
