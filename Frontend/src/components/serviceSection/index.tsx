@@ -31,18 +31,27 @@ const Service: React.FC<ServiceProps> = ({
   onNext,
 }) => {
   const sliderRef = useRef<HTMLDivElement>(null);
+  const rafRef = useRef<number | null>(null);
+
   const [isAtStart, setIsAtStart] = useState(true);
   const [isAtEnd, setIsAtEnd] = useState(false);
-  const checkScrollPosition = () => {
-    const slider = sliderRef.current;
-    if (!slider) return;
-    const atStart = slider.scrollLeft <= 1;
-    const atEnd =
-      slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1;
-    setIsAtStart(atStart);
-    setIsAtEnd(atEnd);
-  };
 
+ const checkScrollPosition = () => {
+   const slider = sliderRef.current;
+
+   if (!slider) return;
+   if (rafRef.current !== null) {
+     return;
+   }
+   rafRef.current = requestAnimationFrame(() => {
+     rafRef.current = null;
+     const atStart = slider.scrollLeft <= 1;
+     const atEnd =
+       slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1;
+     setIsAtStart((prev) => (prev === atStart ? prev : atStart));
+     setIsAtEnd((prev) => (prev === atEnd ? prev : atEnd));
+   });
+ };
   useEffect(() => {
     const slider = sliderRef.current;
     if (!slider) return;

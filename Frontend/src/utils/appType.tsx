@@ -77,6 +77,20 @@ export interface FooterProps {
   linkedinUrl?: string;
 }
 
+export interface SVGIconProps {
+  name?: string;
+  style?: React.CSSProperties;
+  fill?: string;
+  viewBox?: string;
+  height?: string;
+  width?: string;
+  className?: string;
+  strokeWidth?: number;
+  stroke?: string;
+  stopColor?: string;
+}
+
+
 export interface ImageProps {
   src: string;
   alt?: string;
