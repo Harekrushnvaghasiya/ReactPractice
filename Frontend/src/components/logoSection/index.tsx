@@ -1,24 +1,42 @@
-import React from 'react'
+import React, { useEffect, useMemo, useRef } from "react";
 import { LogoProps } from "../../utils/appType";
-import { ClientLogo, LogoSectionInner, LogoSectionWrapper, LogoTrack } from './style';
-import Image from '../image';
+import {
+  ClientLogo,
+  LogoSectionInner,
+  LogoSectionWrapper,
+  LogoTrack,
+} from "./style";
+import Image from "../image";
 
 const LogoSection: React.FC<LogoProps> = ({ logos }) => {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const marqueeLogos = useMemo(() => [...logos, ...logos], [logos]);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    const updateWidth = () => {
+      const halfWidth = track.scrollWidth / 2;
+      track.style.setProperty("--marquee-distance", `${halfWidth}px`);
+    };
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => {
+      window.removeEventListener("resize", updateWidth);
+    };
+  }, [marqueeLogos]);
+
   return (
     <LogoSectionWrapper>
-      <LogoTrack>
-        {[...logos, ...logos].map((logo, index) => (
+      <LogoTrack ref={trackRef}>
+        {marqueeLogos.map((logo, index) => (
           <LogoSectionInner key={`${logo.title}-${index}`}>
             <ClientLogo>
               <Image
+                className="client-logo"
                 src={logo.url}
                 alt={logo.title ?? ""}
-                width= {'auto'}
-                height ={32}
-                objectFit='contain'
-                className='client-logo'
-                />
- 
+              />
             </ClientLogo>
           </LogoSectionInner>
         ))}
@@ -27,4 +45,4 @@ const LogoSection: React.FC<LogoProps> = ({ logos }) => {
   );
 };
 
-export default LogoSection; 
+export default LogoSection;

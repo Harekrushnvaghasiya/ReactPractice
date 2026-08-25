@@ -4,10 +4,6 @@ export const LogoSectionWrapper = styled.section`
   width: 100%;
   overflow: hidden;
   padding-block: var(--spacing-48);
-
-  @media (max-width: 449px) {
-    padding-block: var(--spacing-20);
-  }
 `;
 
 export const LogoTrack = styled.div`
@@ -15,35 +11,45 @@ export const LogoTrack = styled.div`
   align-items: center;
   width: max-content;
   animation: logoScroll 30s linear infinite;
-  gap: var(--spacing-70);
+  will-change: transform;
 
   @keyframes logoScroll {
     from {
-      transform: translateX(0);
+      transform: translate3d(0, 0, 0);
     }
+
     to {
-      transform: translateX(-50%);
+      transform: translate3d(calc(-1 * var(--marquee-distance)), 0, 0);
     }
-  }
-  @media (max-width: 449px) {
-    gap: var(--spacing-20);
   }
 `;
 
 export const LogoSectionInner = styled.div`
-  flex-shrink: 0;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: var(--spacing-70);
 `;
 
 export const ClientLogo = styled.div`
+  flex: 0 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
   .client-logo {
     display: block;
+    width: auto;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  @media (max-width: 991px) {
+    .client-logo {
+      height: 28px;
+    }
   }
 
   @media (max-width: 449px) {
