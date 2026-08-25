@@ -27,13 +27,13 @@ export const FooterGalleryItem = styled.div`
   overflow: hidden;
   cursor: pointer;
 
-  .footer-gallary-image {
+  .footer-gallery-image {
     display: block;
     transition: transform 0.3s ease;
   }
 
   &:hover {
-    .footer-gallary-image {
+    .footer-gallery-image {
       transform: scale(1.03);
     }
   }

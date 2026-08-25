@@ -2,7 +2,6 @@ import {
   FooterWrapper,
   FooterGallery,
   FooterGalleryItem,
-  InstagramButton,
   FooterContentWrapper,
   FooterContentTop,
   FooterTagline,
@@ -52,7 +51,7 @@ const Footer = () => {
       <FooterGallery>
         <FooterGalleryItem>
           <Image
-            className="footer-gallary-image"
+            className="footer-gallery-image"
             src={FooterImage1}
             alt="Pause studio"
             height={"100%"}
@@ -63,7 +62,7 @@ const Footer = () => {
 
         <FooterGalleryItem>
           <Image
-            className="footer-gallary-image"
+            className="footer-gallery-image"
             src={FooterImage2}
             alt="Pause studio"
             height={"100%"}
@@ -83,7 +82,7 @@ const Footer = () => {
 
         <FooterGalleryItem>
           <Image
-            className="footer-gallary-image"
+            className="footer-gallery-image"
             src={FooterImage3}
             alt="Pause studio"
             height={"100%"}
@@ -94,7 +93,7 @@ const Footer = () => {
 
         <FooterGalleryItem>
           <Image
-            className="footer-gallary-image"
+            className="footer-gallery-image"
             src={FooterImage4}
             alt="Pause studio"
             height={"100%"}
@@ -104,7 +103,7 @@ const Footer = () => {
         </FooterGalleryItem>
         <FooterGalleryItem>
           <Image
-            className="footer-gallary-image"
+            className="footer-gallery-image"
             src={FooterImage5}
             alt="Pause studio"
             height={"100%"}
@@ -114,7 +113,7 @@ const Footer = () => {
         </FooterGalleryItem>
         <FooterGalleryItem>
           <Image
-            className="footer-gallary-image"
+            className="footer-gallery-image"
             src={FooterImage6}
             alt="Pause studio"
             height={"100%"}
@@ -124,7 +123,7 @@ const Footer = () => {
         </FooterGalleryItem>
         <FooterGalleryItem>
           <Image
-            className="footer-gallary-image"
+            className="footer-gallery-image"
             src={FooterImage7}
             alt="Pause studio"
             height={"100%"}
@@ -160,7 +159,13 @@ const Footer = () => {
         <FooterContentMiddle>
           {/* LOGO + APPS */}
           <FooterLogoBlock>
-            <Image className="footer-logo" src={logo} alt="Pause" width={153} height={'auto'} />
+            <Image
+              className="footer-logo"
+              src={logo}
+              alt="Pause"
+              width={153}
+              height={"auto"}
+            />
 
             <FooterApps>
               <FooterAppLink href="#">

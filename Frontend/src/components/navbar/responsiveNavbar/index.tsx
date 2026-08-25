@@ -17,7 +17,6 @@ import {
   MobileSocialLink,
   MobileAppLinks,
   MobileAppLink,
-  MobileCTA,
   ResponsiveButtonWrapper,
   LogosWrapper
 } from "./style";
