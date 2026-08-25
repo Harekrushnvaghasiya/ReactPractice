@@ -31,10 +31,8 @@ const Service: React.FC<ServiceProps> = ({
   onNext,
 }) => {
   const sliderRef = useRef<HTMLDivElement>(null);
-
   const [isAtStart, setIsAtStart] = useState(true);
   const [isAtEnd, setIsAtEnd] = useState(false);
-
   const checkScrollPosition = () => {
     const slider = sliderRef.current;
     if (!slider) return;
@@ -58,7 +56,7 @@ const Service: React.FC<ServiceProps> = ({
       slider.removeEventListener("scroll", checkScrollPosition);
       window.removeEventListener("resize", checkScrollPosition);
     };
-  }, [services]);
+  }, []);
 
   const getScrollAmount = () => {
     const slider = sliderRef.current;
