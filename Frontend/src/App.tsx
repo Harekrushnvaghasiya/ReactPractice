@@ -4,11 +4,8 @@ import {
   SPACING_TYPE,
 } from "./components/global/constants";
 import Hero from "./components/heroSection";
-import HomeHero from "./assets/images/HomeHero.avif";
-import VisionLeft from "./assets/images/our-vision-left.avif";
-import VisionRight from "./assets/images/our-vision-right.avif";
 import Service from "./components/serviceSection";
-import { logos, services } from "./helpers/raw";
+import { ctaContent, heroContent, logos, ourVisionContent ,serviceContent} from "./helpers/raw";
 import LogoSection from "./components/logoSection";
 import OurVisionSection from "./components/visionSection";
 
@@ -16,37 +13,37 @@ function App() {
   return (
     <>
       <Hero
-        title="Elevate your Mental, Physical and Emotional well-being"
-        description="Explore science-backed therapies designed to enhance recovery, reduce stress, and rejuvenate your entire being."
-        primaryButtonText="Pause Now"
-        primaryButtonLink="/"
-        maxTitleWidth={863}
+        title={heroContent.title}
+        description={heroContent.description}
+        primaryButtonText={heroContent.primaryButtonText}
+        primaryButtonLink={heroContent.primaryButtonLink}
+        maxTitleWidth={heroContent.maxTitleWidth}
+        heroImage={heroContent.heroImage}
         size={HERO_SIZE.LARGE}
-        heroImage={HomeHero}
       />
 
       <Service
-        tag="Our Services"
-        title="Science-Backed Recovery"
-        services={services}
+        tag={serviceContent.tag}
+        title={serviceContent.title}
+        services={serviceContent.services}
       />
 
       <LogoSection logos={logos} />
 
       <OurVisionSection
-        leftImage={VisionLeft}
-        rightImage={VisionRight}
-        tag="OUR VISION"
-        title="The Solution to Modern Living"
-        description="Stress, anxiety, lack of quality sleep, inefficient recovery and compromised immunity are universal problems.  Combining the most advanced recovery modalities with inspired design and experiential service, Pause is redefining one-stop-wellness for today’s demanding lifestyle."
-        primaryButtonLink="/"
-        primaryButtonText="Find Your Location"
+        leftImage={ourVisionContent.leftImage}
+        rightImage={ourVisionContent.rightImage}
+        tag={ourVisionContent.tag}
+        title={ourVisionContent.title}
+        description={ourVisionContent.description}
+        primaryButtonLink={ourVisionContent.primaryButtonLink}
+        primaryButtonText={ourVisionContent.primaryButtonText}
       />
 
       <CTA
-        tag="FIND YOUR LOCATION"
-        title="Find a Pause Near You"
-        Content="Pause is redefining one-stop-wellness for today’s demanding lifestyle."
+        tag={ctaContent.tag}
+        title={ctaContent.title}
+        Content= {ctaContent.Content}
         variant={SPACING_TYPE.TOP}
         isBgImage={true}
       />

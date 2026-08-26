@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
 import {
   ResponsiveContainer,
   ResponsiveHeader,
@@ -15,16 +14,14 @@ import {
   MobileFooter,
   MobileSocialLinks,
   MobileSocialLink,
-  MobileAppLinks,
-  MobileAppLink,
   ResponsiveButtonWrapper,
   LogosWrapper
 } from "./style";
-
 import SVGIcon from "../../../assets/Icons/SVGIcon";
 import Button from "../../buttons";
 import { NavbarProps } from "../../../utils/appType";
 import Image from "../../image";
+import AppDownload from "../../appDownload";
 
 const ResponsiveNavbar = ({
   isOpen,
@@ -33,7 +30,6 @@ const ResponsiveNavbar = ({
   logoAlt = "Logo",
   items,
   socialLinks = [],
-  appLinks = [],
   cta,
 }: NavbarProps) => {
   const [openDropdown, setOpenDropdown] =
@@ -54,7 +50,13 @@ const ResponsiveNavbar = ({
       {/* HEADER */}
       <ResponsiveHeader>
         <Link to="/" onClick={onClose}>
-          <Image className="responsive-logo" src={logo} alt={logoAlt} width={80} height={'auto'}/>
+          <Image
+            className="responsive-logo"
+            src={logo}
+            alt={logoAlt}
+            width={80}
+            height={"auto"}
+          />
         </Link>
 
         <CloseButton
@@ -87,9 +89,7 @@ const ResponsiveNavbar = ({
             }
 
             // dropdown
-
             const isOpen = openDropdown === index;
-
             return (
               <MobileNavItem key={item.label}>
                 <MobileDropdownButton
@@ -148,20 +148,7 @@ const ResponsiveNavbar = ({
             )}
 
             {/* APP STORE LINKS */}
-            {appLinks.length > 0 && (
-              <MobileAppLinks>
-                {appLinks.map((app) => (
-                  <MobileAppLink
-                    key={app.label}
-                    href={app.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image className="app-logo" src={app.image} alt={app.label} width={105} height={'auto'}/>
-                  </MobileAppLink>
-                ))}
-              </MobileAppLinks>
-            )}
+            <AppDownload isNavbar/>
           </LogosWrapper>
 
           {/* BOOK NOW */}

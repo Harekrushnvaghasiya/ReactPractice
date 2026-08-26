@@ -44,8 +44,6 @@ export const FooterGalleryItem = styled.div`
   }
 `;
 
-
-
 // INSTAGRAM OVER GALLERY
 export const InstagramButton = styled.a`
   position: absolute;
@@ -175,25 +173,6 @@ export const FooterLogoBlock = styled.div`
     gap: 24px;
     flex-direction: column;
     align-items: flex-start;
-  }
-`;
-
-
-// APP STORE LINKS
-export const FooterApps = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  @media (max-width: 991px) {
-    gap: 20px;
-  }
-`;
-
-export const FooterAppLink = styled.a`
-  display: block;
-  height: 40px;
-  div {
-    display: block;
   }
 `;
 
