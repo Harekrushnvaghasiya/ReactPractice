@@ -140,19 +140,6 @@ export const MobileSocialLink = styled.a`
   text-decoration: none;
 `;
 
-export const MobileAppLinks = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-`;
-
-export const MobileAppLink = styled.a`
-  display: block;
-  .app-logo {
-    display: block;
-  }
-`;
-
 export const MobileCTA = styled.a`
   width: 100%;
   height: 38px;

@@ -24,12 +24,12 @@ export interface NavbarItem {
   children?: NavbarItem[];
 }
 
-export interface NavbarSocialLink {
+export interface SocialLink {
   label: string;
   href: string;
 }
 
-export interface NavbarAppLink {
+export interface AppDownloadLink {
   label: string;
   href: string;
   image: string;
@@ -46,8 +46,8 @@ export interface NavbarProps {
   logo: string;
   logoAlt?: string;
   items: NavbarItem[];
-  socialLinks?: NavbarSocialLink[];
-  appLinks?: NavbarAppLink[];
+  socialLinks?: SocialLink[];
+  appLinks?: AppDownloadLink[];
   cta?: NavbarCTA;
 }
 
@@ -56,25 +56,26 @@ export interface NavbarVisibilityProps {
   hiddenRoutes?: string[];
 }
 
-export interface FooterLinkItem {
-  label: string;
-  href: string;
-}
-
-export interface FooterLinkGroup {
-  title: string;
-  links: FooterLinkItem[];
-}
-
 export interface FooterProps {
-  galleryImages?: string[];
-  newsletterTitle?: string;
-  footerLinkGroups?: FooterLinkGroup[];
-  disclaimer?: string;
-  copyright?: string;
-  instagramUrl?: string;
-  facebookUrl?: string;
-  linkedinUrl?: string;
+  logo: string;
+  galleryImages: string[];
+  tagline: string;
+  newsletter: {
+    title: string;
+    placeholder: string;
+    buttonText: string;
+  };
+  footerLinks: {
+    title: string;
+    links: {
+      label: string;
+      href: string;
+    }[];
+  }[];
+  disclaimer: string;
+  copyright: string;
+  socialLinks: SocialLink[];
+  appLinks: AppDownloadLink[];
 }
 
 export interface SVGIconProps {
@@ -103,11 +104,6 @@ export interface ImageProps {
   objectPosition?: string;
   className?:string;
 }
-
-// interface ImgProps {
-//   borderRadius?: string;
-//   objectFit?: string;
-// }
 
 export interface CtaProps {
   tag: string;
